@@ -1,0 +1,130 @@
+body {
+  font-family: 'Droid Sans', sans-serif;
+  padding-top: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: 700;
+}
+
+ul {
+  list-style: square;
+}
+
+a,
+a:visited {
+  color: @color-primary;
+
+  &:hover {
+    color: @color-black;
+  }
+}
+
+header {
+  width: 640px;
+  margin: auto;
+  text-align: center;
+
+  h1 {
+    font-weight: 700;
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+
+  .buttons {
+    margin: 30px 0px;
+
+    ul {
+      list-style: none;
+      font-size: 90%;
+
+      li {
+        display: inline-block;
+
+        a.button {
+          background-color: @color-primary;
+          text-transform: uppercase;
+          color: white;
+          display: block;
+          padding: 10px 30px;
+        }
+      }
+    }
+  }
+}
+
+article {
+  width: 840px;
+  margin: auto;
+}
+
+footer {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 80%;
+  color: #777;
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+
+  p {
+    margin-bottom: 5px;
+  }
+}
+
+pre code {
+  background-color: #f1f1f1;
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px;
+  border-radius: 0;
+
+  span.kw, 
+  span.dt {
+    color: @color-primary;
+  }
+
+  span.dv,
+  span.bn,
+  span.fl {
+    color: ligthen(@color-primary, 20%);
+  }
+
+  span.ch { 
+    color: #DC322F; 
+  }
+
+  span.st { 
+    color: #2AA198; 
+  }
+
+  span.co { 
+    color: #93A1A1; 
+  }
+
+  span.ot { 
+    color: #A57800; 
+  }
+
+  span.al { 
+    color: #CB4B16; 
+    font-weight: bold; 
+  }
+
+  span.fu { 
+    color: darken(@color-primary, 25%);
+  }
+
+  span.er { 
+    color: #D30102; 
+    font-weight: bold; 
+  }
+}
+
